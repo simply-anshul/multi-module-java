@@ -5,7 +5,7 @@
 		<groupId>com.anshul</groupId>
 		<artifactId>parent-project</artifactId>
 		<version>0.0.1-SNAPSHOT</version>
-		<relativePath />
+		<relativePath>../pom.xml</relativePath> 
 	</parent>
 
 	<artifactId>tools</artifactId>
@@ -47,6 +47,9 @@
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
+				<configuration>
+					<skip>true</skip>	
+				</configuration>
 			</plugin>
 		</plugins>
 	</build>
